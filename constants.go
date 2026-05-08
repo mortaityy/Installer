@@ -13,7 +13,7 @@ import (
 
 const ReleaseUrl = "https://api.github.com/repos/mortaityy/Vencord/releases/latest"
 const ReleaseUrlFallback = "https://api.github.com/repos/mortaityy/Vencord/releases/latest"
-const InstallerReleaseUrl = "https://api.github.com/repos/mortaityy/Installer/releases/latest"
+const InstallerReleaseUrl = "https://api.github.com/repos/kucl8d/Installer/releases/latest"
 const InstallerReleaseUrlFallback = "https://api.github.com/repos/mortaityy/Installer/releases/latest"
 
 var UserAgent = "VencordInstaller/" + buildinfo.InstallerGitHash + " (https://github.com/mortaityy/Installer)"

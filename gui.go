@@ -12,13 +12,11 @@ import (
 	"bytes"
 	_ "embed"
 	"errors"
+	g "github.com/AllenDang/giu"
+	"github.com/AllenDang/imgui-go"
 	"image"
 	"image/color"
 	"vencordinstaller/buildinfo"
-
-	g "github.com/AllenDang/giu"
-	"github.com/AllenDang/imgui-go"
-
 	// png decoder for icon
 	_ "image/png"
 	"os"
@@ -644,7 +642,7 @@ func loop() {
 			g.Dummy(0, 20),
 			g.Style().SetFontSize(20).To(
 				g.Row(
-					g.Label(Ternary(IsDevInstall, "Dev Install: ", "Vencord will be downloaded to: ")+FilesDir),
+					g.Label(Ternary(IsDevInstall, "Dev Install: ", "Files will be downloaded to: ")+FilesDir),
 					g.Style().
 						SetColor(g.StyleColorButton, DiscordBlue).
 						SetStyle(g.StyleVarFramePadding, 4, 4).
